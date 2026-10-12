@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Hills Momo - Menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="background-wrap"></div>
+
+    <!-- Header & Logo -->
+    <header class="glass-panel fade-in-out">
+        <img src="logo.png" alt="The Hills Momo Logo" class="brand-logo" onerror="this.style.display='none'">
+        <p class="subtitle">Authentic Taste of Mountains</p>
+    </header>
+
+    <!-- Gallery Section (1:1 Ratio for Mobile) -->
+    <section class="gallery-section fade-in-out">
+        <h2 class="section-title">Meet The Owner</h2>
+        <div class="img-container">
+            <img src="owner.jpg" alt="Owner Image" class="gallery-img square-img">
+        </div>
+
+        <h2 class="section-title">Our Cafe (Outside)</h2>
+        <div class="img-container">
+            <img src="outside.jpg" alt="Cafe Outside" class="gallery-img square-img">
+        </div>
+
+        <h2 class="section-title">Inside The Cafe</h2>
+        <div class="img-grid">
+            <img src="inside1.jpg" alt="Inside 1" class="gallery-img square-img">
+            <img src="inside2.jpg" alt="Inside 2" class="gallery-img square-img">
+            <img src="inside3.jpg" alt="Inside 3" class="gallery-img square-img">
+            <img src="inside4.jpg" alt="Inside 4" class="gallery-img square-img">
+        </div>
+    </section>
+
+    <!-- Full Menu Section -->
+    <main id="menu-container">
+        <h2 class="main-heading fade-in-out">Our Menu</h2>
+
+        <!-- Signature Momos -->
+        <section class="menu-category glass-panel fade-in-out">
+            <h2>Signature Momos (Half / Full)</h2>
+            <div class="menu-item"><div class="item-info"><div class="item-name">Veg Steam Momo</div><div class="item-price">₹40 / ₹80</div></div><div class="item-actions"><button class="add-btn" onclick="addToCart('Veg Steam Momo', 'Half', 40)">Half +</button><button class="add-btn" onclick="addToCart('Veg Steam Momo', 'Full', 80)">Full +</button></div></div>
+            <div class="menu-item"><div class="item-info"><div class="item-name">Veg Kurkure Momo</div><div class="item-price">₹60 / ₹120</div></div><div class="item-actions"><button class="add-btn" onclick="addToCart('Veg Kurkure Momo', 'Half', 60)">Half +</button><button class="add-btn" onclick="addToCart('Veg Kurkure Momo', 'Full', 120)">Full +</button></div></div>
+            <div class="menu-item"><div class="item-info"><div class="item-name">Paneer Steam Momo</div><div class="item-price">₹60 / ₹120</div></div><div class="item-actions"><button class="add-btn" onclick="addToCart('Paneer Steam Momo', 'Half', 60)">Half +</button><button class="add-btn" onclick="addToCart('Paneer Steam Momo', 'Full', 120)">Full +</button></div></div>
+            <div class="menu-item"><div class="item-info"><div class="item-name">Paneer Kurkure Momo</div><div class="item-price">₹80 / ₹160</div></div><div class="item-actions"><button class="add-btn" onclick="addToCart('Paneer Kurkure Momo', 'Half', 80)">Half +</button><button class="add-btn" onclick="addToCart('Paneer Kurkure Momo', 'Full', 160)">Full +</button></div></div>
+            <div class="menu-item"><div class="item-info"><div class="item-name">Chicken Steam Momo</div><div class="item-price">₹60 / ₹120</div></div><div class="item-actions"><button class="add-btn" onclick="addToCart('Chicken Steam Momo', 'Half', 60)">Half +</button><button class="add-btn" onclick="addToCart('Chicken Steam Momo', 'Full', 120)">Full +</button></div></div>
+            <div class="menu-item"><div class="item-info"><div class="item-name">Chicken Kurkure Momo</div><div class="item-price">₹80 / ₹160</div></div><div class="item-actions"><button class="add-btn" onclick="addToCart('Chicken Kurkure Momo', 'Half', 80)">Half +</button><button class="add-btn" onclick="addToCart('Chicken Kurkure Momo', 'Full', 160)">Full +</button></div></div>
+        </section>
+
+        <!-- Chinatown -->
+        <section class="menu-category glass-panel fade-in-out">
+            <h2>Chinatown - Bestsellers</h2>
+            <div class="menu-item"><div class="item-info"><div class="item-name">Veg Noodles</div><div class="item-price">₹80</div></div><div class="item-actions"><button class="add-btn" onclick="addToCart('Veg Noodles', '', 80)">Add +</button></div></div>
+            <div class="menu-item"><div class="item-info"><div class="item-name">Hakka Noodles</div><div class="item-price">₹100</div></div><div class="item-actions"><button class="add-btn" onclick="addToCart('Hakka Noodles', '', 100)">Add +</button></div></div>
+            <div class="menu-item"><div class="item-info"><div class="item-name">Chicken Hakka Noodles</div><div class="item-price">₹120</div></div><div class="item-actions"><button class="add-btn" onclick="addToCart('Chicken Hakka Noodles', '', 120)">Add +</button></div></div>
+        </section>
+
+        <!-- Pasta -->
+        <section class="menu-category glass-panel fade-in-out">
+            <h2>Pasta</h2>
+            <div class="menu-item"><div class="item-info"><div class="item-name">Red Sauce Pasta</div><div class="item-price">₹110</div></div><div class="item-actions"><button class="add-btn" onclick="addToCart('Red Sauce Pasta', '', 110)">Add +</button></div></div>
+            <div class="menu-item"><div class="item-info"><div class="item-name">White Sauce Pasta</div><div class="item-price">₹120</div></div><div class="item-actions"><button class="add-btn" onclick="addToCart('White Sauce Pasta', '', 120)">Add +</button></div></div>
+            <div class="menu-item"><div class="item-info"><div class="item-name">Chicken Red Sauce Pasta</div><div class="item-price">₹130</div></div><div class="item-actions"><button class="add-btn" onclick="addToCart('Chicken Red Sauce Pasta', '', 130)">Add +</button></div></div>
+            <div class="menu-item"><div class="item-info"><div class="item-name">Chicken White Sauce Pasta</div><div class="item-price">₹140</div></div><div class="item-actions"><button class="add-btn" onclick="addToCart('Chicken White Sauce Pasta', '', 140)">Add +</button></div></div>
+        </section>
+
+        <!-- Pizza -->
+        <section class="menu-category glass-panel fade-in-out">
+            <h2>Pizza</h2>
+            <div class="menu-item"><div class="item-info"><div class="item-name">Margherita Pizza</div><div class="item-price">₹130</div></div><div class="item-actions"><button class="add-btn" onclick="addToCart('Margherita Pizza', '', 130)">Add +</button></div></div>
+            <div class="menu-item"><div class="item-info"><div class="item-name">Veg Pizza</div><div class="item-price">₹140</div></div><div class="item-actions"><button class="add-btn" onclick="addToCart('Veg Pizza', '', 140)">Add +</button></div></div>
+            <div class="menu-item"><div class="item-info"><div class="item-name">Corn Pizza</div><div class="item-price">₹140</div></div><div class="item-actions"><button class="add-btn" onclick="addToCart('Corn Pizza', '', 140)">Add +</button></div></div>
+            <div class="menu-item"><div class="item-info"><div class="item-name">Onion Pizza</div><div class="item-price">₹140</div></div><div class="item-actions"><button class="add-btn" onclick="addToCart('Onion Pizza', '', 140)">Add +</button></div></div>
+            <div class="menu-item"><div class="item-info"><div class="item-name">Capsicum Pizza</div><div class="item-price">₹140</div></div><div class="item-actions"><button class="add-btn" onclick="addToCart('Capsicum Pizza', '', 140)">Add +</button></div></div>
+            <div class="menu-item"><div class="item-info"><div class="item-name">Double Cheese Pizza</div><div class="item-price">₹160</div></div><div class="item-actions"><button class="add-btn" onclick="addToCart('Double Cheese Pizza', '', 160)">Add +</button></div></div>
+            <div class="menu-item"><div class="item-info"><div class="item-name">Paneer Pizza</div><div class="item-price">₹160</div></div><div class="item-actions"><button class="add-btn" onclick="addToCart('Paneer Pizza', '', 160)">Add +</button></div></div>
+            <div class="menu-item"><div class="item-info"><div class="item-name">Chicken Pizza</div><div class="item-price">₹160</div></div><div class="item-actions"><button class="add-btn" onclick="addToCart('Chicken Pizza', '', 160)">Add +</button></div></div>
+        </section>
+
+        <!-- Fries -->
+        <section class="menu-category glass-panel fade-in-out">
+            <h2>Fries</h2>
+            <div class="menu-item"><div class="item-info"><div class="item-name">Classic Fries</div><div class="item-price">₹60</div></div><div class="item-actions"><button class="add-btn" onclick="addToCart('Classic Fries', '', 60)">Add +</button></div></div>
+            <div class="menu-item"><div class="item-info"><div class="item-name">Peri-Peri Fries</div><div class="item-price">₹70</div></div><div class="item-actions"><button class="add-btn" onclick="addToCart('Peri-Peri Fries', '', 70)">Add +</button></div></div>
+            <div class="menu-item"><div class="item-info"><div class="item-name">Cheesy Fries</div><div class="item-price">₹80</div></div><div class="item-actions"><button class="add-btn" onclick="addToCart('Cheesy Fries', '', 80)">Add +</button></div></div>
+        </section>
+
+        <!-- Broasted Chicken -->
+        <section class="menu-category glass-panel fade-in-out">
+            <h2>Broasted Chicken</h2>
+            <div class="menu-item"><div class="item-info"><div class="item-name">Chicken Popcorn</div><div class="item-price">₹130</div></div><div class="item-actions"><button class="add-btn" onclick="addToCart('Chicken Popcorn', '', 130)">Add +</button></div></div>
+            <div class="menu-item"><div class="item-info"><div class="item-name">Chicken Masala Popcorn</div><div class="item-price">₹130</div></div><div class="item-actions"><button class="add-btn" onclick="addToCart('Chicken Masala Popcorn', '', 130)">Add +</button></div></div>
+            <div class="menu-item"><div class="item-info"><div class="item-name">Chicken Cheese Popcorn</div><div class="item-price">₹150</div></div><div class="item-actions"><button class="add-btn" onclick="addToCart('Chicken Cheese Popcorn', '', 150)">Add +</button></div></div>
+        </section>
+
+        <!-- Chicken Strips -->
+        <section class="menu-category glass-panel fade-in-out">
+            <h2>Chicken Strips - 3 Pcs</h2>
+            <div class="menu-item"><div class="item-info"><div class="item-name">Chicken Strip</div><div class="item-price">₹140</div></div><div class="item-actions"><button class="add-btn" onclick="addToCart('Chicken Strip', '', 140)">Add +</button></div></div>
+            <div class="menu-item"><div class="item-info"><div class="item-name">Chicken Masala Strip</div><div class="item-price">₹140</div></div><div class="item-actions"><button class="add-btn" onclick="addToCart('Chicken Masala Strip', '', 140)">Add +</button></div></div>
+            <div class="menu-item"><div class="item-info"><div class="item-name">Chicken Cheese Strip</div><div class="item-price">₹160</div></div><div class="item-actions"><button class="add-btn" onclick="addToCart('Chicken Cheese Strip', '', 160)">Add +</button></div></div>
+        </section>
+
+        <!-- Burgers -->
+        <section class="menu-category glass-panel fade-in-out">
+            <h2>Burgers</h2>
+            <div class="menu-item"><div class="item-info"><div class="item-name">Veg Burger</div><div class="item-price">₹50</div></div><div class="item-actions"><button class="add-btn" onclick="addToCart('Veg Burger', '', 50)">Add +</button></div></div>
+            <div class="menu-item"><div class="item-info"><div class="item-name">Veg Cheese Burger</div><div class="item-price">₹60</div></div><div class="item-actions"><button class="add-btn" onclick="addToCart('Veg Cheese Burger', '', 60)">Add +</button></div></div>
+            <div class="menu-item"><div class="item-info"><div class="item-name">Chicken Burger</div><div class="item-price">₹90</div></div><div class="item-actions"><button class="add-btn" onclick="addToCart('Chicken Burger', '', 90)">Add +</button></div></div>
+            <div class="menu-item"><div class="item-info"><div class="item-name">Chicken Cheese Burger</div><div class="item-price">₹100</div></div><div class="item-actions"><button class="add-btn" onclick="addToCart('Chicken Cheese Burger', '', 100)">Add +</button></div></div>
+        </section>
+
+        <!-- Shakes & Drinks -->
+        <section class="menu-category glass-panel fade-in-out">
+            <h2>Shakes & Drinks</h2>
+            <div class="menu-item"><div class="item-info"><div class="item-name">Cold Drink</div><div class="item-price">₹25</div></div><div class="item-actions"><button class="add-btn" onclick="addToCart('Cold Drink', '', 25)">Add +</button></div></div>
+            <div class="menu-item"><div class="item-info"><div class="item-name">Hot Coffee</div><div class="item-price">₹30</div></div><div class="item-actions"><button class="add-btn" onclick="addToCart('Hot Coffee', '', 30)">Add +</button></div></div>
+            <div class="menu-item"><div class="item-info"><div class="item-name">Cold Coffee</div><div class="item-price">₹80</div></div><div class="item-actions"><button class="add-btn" onclick="addToCart('Cold Coffee', '', 80)">Add +</button></div></div>
+            <div class="menu-item"><div class="item-info"><div class="item-name">Vanilla Shake</div><div class="item-price">₹80</div></div><div class="item-actions"><button class="add-btn" onclick="addToCart('Vanilla Shake', '', 80)">Add +</button></div></div>
+            <div class="menu-item"><div class="item-info"><div class="item-name">Strawberry Shake</div><div class="item-price">₹80</div></div><div class="item-actions"><button class="add-btn" onclick="addToCart('Strawberry Shake', '', 80)">Add +</button></div></div>
+            <div class="menu-item"><div class="item-info"><div class="item-name">Chocolate Shake</div><div class="item-price">₹80</div></div><div class="item-actions"><button class="add-btn" onclick="addToCart('Chocolate Shake', '', 80)">Add +</button></div></div>
+            <div class="menu-item"><div class="item-info"><div class="item-name">Butterscotch Shake</div><div class="item-price">₹80</div></div><div class="item-actions"><button class="add-btn" onclick="addToCart('Butterscotch Shake', '', 80)">Add +</button></div></div>
+        </section>
+
+        <!-- Add-Ons -->
+        <section class="menu-category glass-panel fade-in-out">
+            <h2>Add-Ons</h2>
+            <div class="menu-item"><div class="item-info"><div class="item-name">Chutney Dip</div><div class="item-price">₹5</div></div><div class="item-actions"><button class="add-btn" onclick="addToCart('Chutney Dip', '', 5)">Add +</button></div></div>
+            <div class="menu-item"><div class="item-info"><div class="item-name">Mayonnaise Dip</div><div class="item-price">₹5</div></div><div class="item-actions"><button class="add-btn" onclick="addToCart('Mayonnaise Dip', '', 5)">Add +</button></div></div>
+            <div class="menu-item"><div class="item-info"><div class="item-name">Extra Cheese</div><div class="item-price">₹10</div></div><div class="item-actions"><button class="add-btn" onclick="addToCart('Extra Cheese', '', 10)">Add +</button></div></div>
+            <div class="menu-item"><div class="item-info"><div class="item-name">Leftover Packing</div><div class="item-price">₹10</div></div><div class="item-actions"><button class="add-btn" onclick="addToCart('Leftover Packing', '', 10)">Add +</button></div></div>
+        </section>
+
+        <!-- Contact Section at the end -->
+        <footer class="glass-panel fade-in-out contact-section">
+            <h2>Contact & Connect</h2>
+            <div class="contact-links">
+                <a href="https://wa.me/919310268055" class="btn whatsapp-btn">WhatsApp Us</a>
+                <a href="https://instagram.com/thehillsmomo" class="btn insta-btn">Follow @thehillsmomo</a>
+                <a href="mailto:thehillsmomo@gmail.com" class="btn email-btn">Email Us</a>
+            </div>
+            <p style="margin-top: 15px; text-align: center; color: #aaa; font-size: 0.9rem;">Free Delivery on Minimum Order: ₹249</p>
+        </footer>
+
+        <!-- Bottom Space -->
+        <div style="height: 120px;"></div>
+    </main>
+
+    <!-- Floating Cart Bar -->
+    <div id="floating-cart" class="hidden glass-panel-bottom">
+        <div class="cart-summary">
+            <div>Total Items: <span id="cart-count">0</span></div>
+            <div class="cart-total">₹ <span id="cart-price">0</span></div>
+        </div>
+        <button class="checkout-btn" onclick="openCheckout()">Checkout</button>
+    </div>
+
+    <!-- Checkout Modal -->
+    <div id="checkout-modal" class="modal-overlay hidden">
+        <div class="modal-content glass-panel">
+            <h2 class="modal-title">Home Delivery 🛵</h2>
+            
+            <div id="order-list" class="order-list"></div>
+            
+            <h3 class="modal-total">Total: ₹<span id="modal-total-price">0</span></h3>
+            
+            <div class="form-group">
+                <input type="text" id="customer-name" placeholder="Your Name" required>
+                <div class="location-wrapper">
+                    <input type="text" id="customer-location" placeholder="Get Current Location ➡️" required>
+                    <button type="button" id="get-location-btn" onclick="fetchLocation()">📍</button>
+                </div>
+                <p style="font-size: 0.8rem; color: #888; margin-bottom: 10px; text-align: center;">Click 📍 to auto-fetch your location</p>
+            </div>
+            
+            <div class="modal-buttons">
+                <button class="btn-red" onclick="clearCart()">Clear Cart</button>
+                <button class="btn-green" onclick="sendOrder()">Send Order</button>
+            </div>
+            <button class="btn-gray" onclick="closeCheckout()">Back to Menu</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
